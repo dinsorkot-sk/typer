@@ -13,5 +13,6 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui',
     '@nuxtjs/tailwindcss'
-  ]
+  ],
+  css: ['~/assets/css/main.css'],
 })

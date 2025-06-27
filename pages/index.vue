@@ -12,15 +12,6 @@
 
         <!-- ส่วนเนื้อหาหลัก -->
         <main class="flex w-full max-w-4xl flex-col items-center gap-12 text-center">
-            <!-- 
-          เรียกใช้ Topic Component พร้อมส่ง props
-        -->
-            <Topic 
-                :target-key="currentTargetKey"
-                :finger="currentFinger"
-                :last-pressed-key="lastPressedKey"
-            />
-
             <!--
           เรียกใช้ Keyboard Component พร้อมรับ event
         -->
@@ -38,7 +29,6 @@
 <script>
 // ไม่จำเป็นต้อง import เพราะ Nuxt.js 3 จัดการให้แล้ว
 // แต่ถ้าใช้ Nuxt 2 หรือ Vue CLI ต้อง import components ก่อน
-import Topic from '~/components/Topic.vue';
 import Keyboard from '~/components/Keyboard.vue';
 
 export default {
